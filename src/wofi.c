@@ -1574,7 +1574,7 @@ void wofi_init(struct map* _config) {
 	outer_box = gtk_box_new(outer_orientation, 0);
 	gtk_widget_set_name(outer_box, "outer-box");
 	gtk_container_add(GTK_CONTAINER(window), outer_box);
-	entry = gtk_search_entry_new();
+	entry = gtk_entry_new();
 
 	gtk_widget_set_name(entry, "input");
 	gtk_entry_set_placeholder_text(GTK_ENTRY(entry), prompt);
